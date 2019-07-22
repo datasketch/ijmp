@@ -3,7 +3,9 @@
     <Header />
     <main class="flex-grow bg-gray-100 shadow-inner px-4">
       <div class="container mx-auto">
-        <router-view/>
+        <keep-alive>
+          <router-view/>
+        </keep-alive>
       </div>
     </main>
   </div>

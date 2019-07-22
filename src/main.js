@@ -1,7 +1,8 @@
+import App from './App.vue'
 import Vue from 'vue'
 import VueMeta from 'vue-meta'
-import App from './App.vue'
 import router from './router'
+import { VueSpinners } from '@saeris/vue-spinners'
 
 Vue.config.productionTip = false
 
@@ -14,6 +15,7 @@ Vue.mixin({
 })
 
 Vue.use(VueMeta)
+Vue.use(VueSpinners)
 
 new Vue({
   router,

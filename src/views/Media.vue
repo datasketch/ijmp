@@ -1,8 +1,9 @@
 <template>
-  <div class="py-4 grid">
-    <template v-if="media.length">
+  <div class="py-4">
+    <div v-if="media.length" class="grid">
       <MediaCard v-for="m in media" :key="`media-${m.id}`" :media="m"/>
-    </template>
+    </div>
+    <grid-loader v-else color="#319795" class="mx-auto absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%)"></grid-loader>
   </div>
 </template>
 
