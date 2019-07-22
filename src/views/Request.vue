@@ -1,6 +1,6 @@
 <template>
   <div class="w-full max-w-lg mx-auto absolute top-1/2 left-1/2" style="transform: translate(-50%, -50%)">
-    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/feedback" method="POST" name="contact" netlify>
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" name="contact" netlify>
       <h1 class="text-center mb-8 text-xl font-bold">Háblanos de tu medio</h1>
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="media">
