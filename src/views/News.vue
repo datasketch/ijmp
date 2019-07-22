@@ -1,14 +1,18 @@
 <template>
-  <div class="home">
-    <p>home</p>
+  <div class="py-4 grid">
+    <template v-if="news.length">
+      <NewsCard v-for="n in news" :key="`news-${n.id}`" :n="n"/>
+    </template>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import NewsCard from '@/components/NewsCard'
 
 export default {
   name: 'News',
+  components: { NewsCard },
   metaInfo: {
     title: 'Noticias',
     titleTemplate: '%s · IJMP'

@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+@screen md {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@screen lg {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
+
 @tailwind utilities;
