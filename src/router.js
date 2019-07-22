@@ -22,6 +22,11 @@ export default new Router({
       path: '/agregar-medio',
       name: 'add',
       component: () => import('./views/Request.vue')
+    },
+    {
+      path: '/feedback',
+      name: 'feedback',
+      component: () => import('./views/Feedback.vue')
     }
   ]
 })
