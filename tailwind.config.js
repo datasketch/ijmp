@@ -3,6 +3,9 @@ module.exports = {
     extend: {
       fontFamily: {
         raleway: ['Raleway', 'sans-serif']
+      },
+      inset: {
+        '1/2': '50%'
       }
     }
   },

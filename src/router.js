@@ -17,6 +17,16 @@ export default new Router({
       path: '/medios',
       name: 'media',
       component: () => import('./views/Media.vue')
+    },
+    {
+      path: '/agregar-medio',
+      name: 'add',
+      component: () => import('./views/Request.vue')
+    },
+    {
+      path: '/feedback',
+      name: 'feedback',
+      component: () => import('./views/Feedback.vue')
     }
   ]
 })

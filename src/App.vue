@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="h-screen flex flex-col font-raleway">
     <Header />
-    <main class="flex-grow bg-gray-100 shadow-inner px-4">
+    <main class="flex-grow bg-gray-100 px-4">
       <div class="container mx-auto">
         <keep-alive>
           <router-view/>

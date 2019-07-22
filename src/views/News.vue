@@ -3,7 +3,7 @@
     <div v-if="news.length" class="grid">
       <NewsCard v-for="n in news" :key="`news-${n.id}`" :n="n"/>
     </div>
-    <grid-loader v-else color="#319795" class="mx-auto absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%)"></grid-loader>
+    <grid-loader v-else color="#319795" class="mx-auto absolute top-1/2 left-1/2" style="transform: translate(-50%, -50%)"></grid-loader>
     <div class="text-center" v-if="error">
       <p>{{ error }}</p>
     </div>
