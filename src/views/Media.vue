@@ -4,6 +4,9 @@
       <MediaCard v-for="m in media" :key="`media-${m.id}`" :media="m"/>
     </div>
     <grid-loader v-else color="#319795" class="mx-auto absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%)"></grid-loader>
+    <div class="text-center" v-if="error">
+      <p>{{ error }}</p>
+    </div>
   </div>
 </template>
 
@@ -21,7 +24,8 @@ export default {
   data () {
     return {
       section: 'medios',
-      media: []
+      media: [],
+      error: null
     }
   },
   computed: {
@@ -34,8 +38,7 @@ export default {
       const response = await axios.get(this.url)
       this.media = response.data.data
     } catch (error) {
-      alert('Oops :(')
-      console.error(error)
+      this.error = 'Algo ha salido mal. Por favor, abre este sitio web en una ventana de incógnito o desactiva todos los ad blockers en tu navegador'
     }
   }
 }
