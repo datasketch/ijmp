@@ -13,6 +13,7 @@
 <script>
 import axios from 'axios'
 import NewsCard from '@/components/NewsCard'
+import shuffle from 'lodash.shuffle'
 
 export default {
   name: 'News',
@@ -36,7 +37,7 @@ export default {
   async created () {
     try {
       const response = await axios.get(this.url)
-      this.news = response.data.data
+      this.news = shuffle(response.data.data)
     } catch (error) {
       this.error = 'Algo ha salido mal. Por favor, abre este sitio web en una ventana de incógnito o desactiva todos los ad blockers en tu navegador'
     }
