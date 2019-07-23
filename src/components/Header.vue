@@ -1,5 +1,5 @@
 <template>
-  <header class="p-4 bg-white shadow z-50">
+  <header class="p-4 bg-white shadow z-50 sticky top-0">
     <nav class="container mx-auto flex items-center justify-between">
       <div class="nav-left">
         <router-link to="/" class="tracking-wider mr-4" exact-active-class

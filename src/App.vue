@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="h-screen flex flex-col font-raleway">
+  <div id="app" class="min-h-screen flex flex-col font-raleway">
     <Header />
     <main class="flex-grow bg-gray-100 px-4">
       <div class="container mx-auto">
