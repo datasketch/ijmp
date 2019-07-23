@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-lg mx-auto absolute top-1/2 left-1/2" style="transform: translate(-50%, -50%)">
+  <div class="w-full max-w-lg mx-auto py-16">
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="post" name="request">
       <h1 class="text-center mb-8 text-xl font-bold">Háblanos de tu medio</h1>
       <input type="hidden" name="form-name" value="request" />
@@ -38,6 +38,10 @@
 
 <script>
 export default {
-  name: 'Request'
+  name: 'Request',
+  metaInfo: {
+    title: 'Agregar mi medio',
+    titleTemplate: '%s · IJMP'
+  }
 }
 </script>
